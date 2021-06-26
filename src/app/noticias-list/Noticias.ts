@@ -5,6 +5,5 @@ export interface Noticias{
     imagen: string;
     fecha: string;
     visitas: number;
-   
 
 }
