@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comentarios.component.scss']
 })
 export class ComentariosComponent implements OnInit {
-  encabezado={
-    titulo:"assets/img/destacados.png", 
-
-  }
+ 
   constructor() { }
 
   ngOnInit(): void {

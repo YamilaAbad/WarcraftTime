@@ -10,7 +10,9 @@ import { GuiasComponent } from './guias/guias.component';
 import { TemporadaComponent } from './temporada/temporada.component';
 import { RedesComponent } from './redes/redes.component';
 import { ForoComponent } from './foro/foro.component';
-
+import { ForoDestacadoComponent } from './foro-destacado/foro-destacado.component';
+import { InputVotarComponent } from './input-votar/input-votar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,14 @@ import { ForoComponent } from './foro/foro.component';
     TemporadaComponent,
     RedesComponent,
     ForoComponent,
+    ForoDestacadoComponent,
+    InputVotarComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

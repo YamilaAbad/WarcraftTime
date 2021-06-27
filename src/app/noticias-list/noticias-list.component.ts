@@ -9,7 +9,7 @@ import { Noticias } from './Noticias';
 export class NoticiasListComponent implements OnInit {
   encabezado={
     titulo:"assets/img/noticias.png",
-  }
+  };
   noticias: Noticias[] =[ 
     {
       titulo: 'El encuentro mas épico de todo wow',

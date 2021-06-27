@@ -1,1 +1,16 @@
-<p>foro works!</p>
+<div>
+  <img [src]="encabezado.titulo" class="card-img-top" alt="...">
+</div>
+<div *ngFor="let discucion of discuciones">
+  
+  <div class="card text-center">
+    <div class="card-body bg-dark">
+      <h5 class="card-title text-white">{{discucion.titulo}}</h5>
+      <p class="card-text text-white">{{discucion.descripcion}}</p>
+      <a [routerLink]="['/comentario']" type="button" class="btn btn-outline-primary"> 🗨 Opinar</a>
+      <p></p>
+      <app-input-votar [discucion]="discucion"></app-input-votar>
+      <p class="card-text text-white">Cantidad de votos {{discucion.votos}}</p>
+    </div>
+  </div>
+</div>
