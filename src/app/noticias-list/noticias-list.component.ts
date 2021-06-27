@@ -71,4 +71,7 @@ export class NoticiasListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  vistas(noticia: Noticias): void{
+    noticia.visitas++;
+  }
 }

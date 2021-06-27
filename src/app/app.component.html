@@ -8,16 +8,20 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" [routerLink]="['/']">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Todas las noticias</a>
+            <a class="nav-link" [routerLink]="['/guias']">Guias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Guias</a>
+            <a class="nav-link" [routerLink]="['/foro']">Foro de la comunidad
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Temporada 1 SL</a>
+            <a class="nav-link" [routerLink]="['/temporada']">Temporada 1 SL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/redes']">Redes</a>
           </li>
         </ul>
       </div>
@@ -25,15 +29,10 @@
   </nav>
 </div>
 <div class="container">
-  <div class="row">
-    <div class="col-8">
-      <app-noticias-list></app-noticias-list>
-    </div>
-    <div class="col-4">Destacados</div>
-  </div>
+  <router-outlet></router-outlet>
 </div>
 <footer> 
-<div class="card text-center">
+<div class="card text-center bg-dark">
   <div class="card-footer text-muted">
       <p class="copy"> © 2021 {{title}} | Todos los derechos reservados. All rights reserved. - Blizzard Entertainment</p>
   </div>
