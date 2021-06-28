@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Discuciones } from '../foro/Discuciones';
+import { Comentario } from '../foro/Comentario';
 
 @Component({
   selector: 'app-input-votar',
@@ -11,17 +11,17 @@ export class InputVotarComponent implements OnInit {
   constructor() { }
 
   @Input()
-  discucion!: Discuciones;
+  comentario!: Comentario;
 
   ngOnInit(): void {
   }
 
-  restarVoto(discucion: Discuciones): void{
-    discucion.votos--;
+  restarVoto(comentario: Comentario): void{
+    comentario.votos--;
   }
 
-  sumarVoto(discucion: Discuciones): void{
-    discucion.votos++;
+  sumarVoto(comentario: Comentario): void{
+    comentario.votos++;
   }
 
 

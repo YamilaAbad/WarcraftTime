@@ -6,13 +6,11 @@ import { AppComponent } from './app.component';
 import { NoticiasListComponent } from './noticias-list/noticias-list.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { WarcraftComponent } from './warcraft/warcraft.component';
-import { GuiasComponent } from './guias/guias.component';
-import { TemporadaComponent } from './temporada/temporada.component';
 import { RedesComponent } from './redes/redes.component';
 import { ForoComponent } from './foro/foro.component';
-import { ForoDestacadoComponent } from './foro-destacado/foro-destacado.component';
 import { InputVotarComponent } from './input-votar/input-votar.component';
 import { FormsModule } from '@angular/forms';
+import { NoticiaCompletaComponent } from './noticia-completa/noticia-completa.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +18,10 @@ import { FormsModule } from '@angular/forms';
     NoticiasListComponent,
     ComentariosComponent,
     WarcraftComponent,
-    GuiasComponent,
-    TemporadaComponent,
     RedesComponent,
     ForoComponent,
-    ForoDestacadoComponent,
     InputVotarComponent,
+    NoticiaCompletaComponent,
     
   ],
   imports: [

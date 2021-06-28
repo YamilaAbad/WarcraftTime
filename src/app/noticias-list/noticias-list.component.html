@@ -8,9 +8,9 @@
                 <h5 class="card-title text-white">{{noticia.titulo}}</h5>
                 <p class="card-text text-white">{{noticia.descripcion}}</p>
                 <p class="card-text text-white"><small class="text-muted">{{noticia.fecha}}</small></p>
-                <a href="#" class="btn btn-primary" (click)="vistas(noticia)">{{noticia.boton}}</a>
+                <button type="button" class="btn btn-primary" (click)="vistas(noticia)"  (click)="mostrarNoticia(noticia)">Ver noticia completa</button>
                 <p class="card-text text-white"><small class="text-muted">👁️ {{noticia.visitas}}</small></p>
-                <button type="button" class="btn btn-outline-primary">🗨 Comentar</button> 
+                
             </div>
             </div>
         </div>

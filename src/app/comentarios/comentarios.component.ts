@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComentariosComponent implements OnInit {
  
+  cuerpo={
+    img: "assets/img/comentarios.jpg"
+  };
   constructor() { }
 
   ngOnInit(): void {
